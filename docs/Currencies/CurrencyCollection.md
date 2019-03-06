@@ -4,7 +4,7 @@ Currency collection can store a set of currencies and there amounts. Currency co
 
 ```csharp
 using System;
-using Devdog.InventoryPlus.Currencies;
+using Devdog.Rucksack.Currencies;
 
 var currencies = new CurrencyCollection();
 var gold = new Currency(Guid.NewGuid(), "Gold", "GOLD", 2, 999f);
