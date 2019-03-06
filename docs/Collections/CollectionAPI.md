@@ -25,7 +25,7 @@ Collections have to be indexed in collection registries so it can be looked up a
 It is recommended to register the collection by name and GUID. The name defines it's UI binding, while the ID defines it's unique instance (ID should always be unique per collection).
 
 ```csharp
-using Devdog.InventoryPlus.Collections;
+using Devdog.Rucksack.Collections;
 
 // Registering an item
 CollectionRegistry.byID.Register(collectionGuid, collection);
@@ -206,7 +206,7 @@ Collection restrictions allow you to restrict your collection when adding or rem
 
 ```csharp
 using System;
-using Devdog.InventoryPlus.Collections;
+using Devdog.Rucksack.Collections;
 
 public class MyRestriction<T> : ICollectionRestriction<T>
     where T: IEquatable<T>
@@ -257,7 +257,7 @@ Of course, you can also implement your own collection if you so desire. To do th
 
 ```csharp
 using System;
-using Devdog.InventoryPlus.Collections;
+using Devdog.Rucksack.Collections;
 
 public sealed class MyCollection<TElementType> : CollectionBase<ICollectionSlot<TElementType>, TElementType>
     where TElementType : IEquatable<TElementType>, IStackable, IIdentifiable, ICloneable<TElementType>
