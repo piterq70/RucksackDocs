@@ -4,7 +4,7 @@ Currency collection groups, like regular [collection groups](../Collections/Coll
 
 ```csharp
 using System;
-using Devdog.InventoryPlus.Collections;
+using Devdog.Rucksack.Collections;
 
 var col1 = new CurrencyCollection();
 var col2 = new CurrencyCollection();
